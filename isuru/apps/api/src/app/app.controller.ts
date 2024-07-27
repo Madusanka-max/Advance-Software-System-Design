@@ -12,6 +12,7 @@ export class AppController {
   }
 
   
+  //Start Asingment cal
   @Post()
   sum(@Body() body: {n1:number , n2:number}) {
     return this.appService.SUM(body.n1,body.n2);
@@ -28,5 +29,5 @@ export class AppController {
   mul(@Body() body: {n1:number , n2:number}) {
     return this.appService.MUL(body.n1,body.n2);
   }
-
+  //End Asingment cal
 }
