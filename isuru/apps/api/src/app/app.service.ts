@@ -7,6 +7,7 @@ export class AppService {
   }
 
   //Start Asingment cal
+  //
   SUM(number1:number, number2:number) {
     return{ total: number1 + number2 };
   }
