@@ -13,19 +13,23 @@ export class AppController {
 
   
   //Start Asingment cal
+// http://localhost:3000/api/sum
   @Post()
   sum(@Body() body: {n1:number , n2:number}) {
     return this.appService.SUM(body.n1,body.n2);
   }
-  @Post()
+// http://localhost:3000/api/sub
+@Post()
   sub(@Body() body: {n1:number , n2:number}) {
     return this.appService.SUB(body.n1,body.n2);
   }
-  @Post()
+// http://localhost:3000/api/dev
+@Post()
   dev(@Body() body: {n1:number , n2:number}) {
     return this.appService.DEV(body.n1,body.n2);
   }
-  @Post()
+// http://localhost:3000/api/mul
+ @Post()
   mul(@Body() body: {n1:number , n2:number}) {
     return this.appService.MUL(body.n1,body.n2);
   }
